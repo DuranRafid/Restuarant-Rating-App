@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="664.0" prefWidth="411.0" style="-fx-background-color: BLANCHEDALMOND;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.RatingController">
+   <children>
+      <Label layoutX="45.0" layoutY="33.0" prefHeight="26.0" prefWidth="266.0" text="1. How would you like to rate our service?">
+         <font>
+            <Font name="Georgia" size="14.0" />
+         </font>
+      </Label>
+      <fx:define>
+         <ToggleGroup fx:id="serviceToggleGroup"/>
+      </fx:define>
+      <RadioButton layoutX="76.0" layoutY="70.0" mnemonicParsing="false" text="Excellent" onAction="#excellentService" toggleGroup="$serviceToggleGroup" />
+      <RadioButton layoutX="76.0" layoutY="95.0" mnemonicParsing="false" text="Good" onAction="#goodService" toggleGroup="$serviceToggleGroup"/>
+      <RadioButton layoutX="76.0" layoutY="122.0" mnemonicParsing="false" text="Average" onAction="#averageService" toggleGroup="$serviceToggleGroup" />
+      <RadioButton layoutX="203.0" layoutY="70.0" mnemonicParsing="false" text="Below Average" onAction="#belowAverageService" toggleGroup="$serviceToggleGroup" />
+      <RadioButton layoutX="206.0" layoutY="95.0" mnemonicParsing="false" text="Bad" onAction="#badService" toggleGroup="$serviceToggleGroup" />
+      <Label layoutX="45.0" layoutY="150.0" prefHeight="33.0" prefWidth="266.0" text="2.How Would you like to rate our price?">
+         <font>
+            <Font name="Georgia" size="14.0" />
+         </font>
+      </Label>
+      <fx:define>
+         <ToggleGroup fx:id="priceToggleGroup"/>
+      </fx:define>
+      <RadioButton layoutX="76.0" layoutY="190.0" mnemonicParsing="false" text="Excellent" onAction="#excellentPrice" toggleGroup="$priceToggleGroup" />
+      <RadioButton layoutX="76.0" layoutY="215.0" mnemonicParsing="false" text="Good" onAction="#goodPrice" toggleGroup="$priceToggleGroup"/>
+      <RadioButton layoutX="76.0" layoutY="241.0" mnemonicParsing="false" text="Average" onAction="#averagePrice" toggleGroup="$priceToggleGroup" />
+      <RadioButton layoutX="203.0" layoutY="190.0" mnemonicParsing="false" text="Below Average" onAction="#belowAveragePrice" toggleGroup="$priceToggleGroup" />
+      <RadioButton layoutX="206.0" layoutY="215.0" mnemonicParsing="false" text="Bad" onAction="#badPrice" toggleGroup="$priceToggleGroup"/>
+      <Label layoutX="45.0" layoutY="271.0" prefHeight="26.0" prefWidth="316.0" text="3. How would you like to rate our environment?">
+         <font>
+            <Font name="Georgia" size="14.0" />
+         </font>
+      </Label>
+      <fx:define>
+         <ToggleGroup fx:id="envirToggleGroup"/>
+      </fx:define>
+      <RadioButton layoutX="76.0" layoutY="304.0" mnemonicParsing="false" text="Excellent" onAction="#excellentEnvir" toggleGroup="$envirToggleGroup" />
+      <RadioButton layoutX="76.0" layoutY="334.0" mnemonicParsing="false" text="Good" onAction="#goodEnvir" toggleGroup="$envirToggleGroup" />
+      <RadioButton layoutX="78.0" layoutY="362.0" mnemonicParsing="false" text="Average" onAction="#averageEnvir" toggleGroup="$envirToggleGroup"/>
+      <RadioButton layoutX="203.0" layoutY="304.0" mnemonicParsing="false" text="Below Average" onAction="#belowAverageEnvir" toggleGroup="$envirToggleGroup"/>
+      <RadioButton layoutX="206.0" layoutY="334.0" mnemonicParsing="false" text="Bad" onAction="#badEnvir" toggleGroup="$envirToggleGroup" />
+      <Label layoutX="52.0" layoutY="409.0" prefHeight="33.0" prefWidth="179.0" text="Your Gmail Address Please :">
+         <font>
+            <Font name="Comic Sans MS" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="gmailID" layoutX="45.0" layoutY="448.0" prefHeight="25.0" prefWidth="300.0" />
+      <Button layoutX="269.0" layoutY="627.0" mnemonicParsing="false" onAction="#submit" prefHeight="25.0" prefWidth="78.0" text="Submit">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="52.0" layoutY="494.0" text="Any Comments :">
+         <font>
+            <Font name="Comic Sans MS" size="13.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="comments" layoutX="42.0" layoutY="513.0" prefHeight="86.0" prefWidth="308.0" />
+   </children>
+</AnchorPane>

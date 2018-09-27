@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="632.0" prefWidth="394.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MadchefController">
+   <children>
+      <ImageView fitHeight="142.0" fitWidth="394.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@1430215036_10987430_1606114156298775_8427678229137648872_o.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="name" alignment="CENTER" layoutX="58.0" layoutY="142.0" prefHeight="45.0" prefWidth="280.0">
+         <font>
+            <Font name="Book Antiqua Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="foods" alignment="CENTER" layoutX="76.0" layoutY="181.0" prefHeight="39.0" prefWidth="250.0">
+         <font>
+            <Font name="Comic Sans MS" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="address" alignment="CENTER" layoutX="26.0" layoutY="220.0" prefHeight="39.0" prefWidth="349.0">
+         <font>
+            <Font name="Calibri" size="13.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="182.0" layoutY="296.0" onMouseClicked="#readReview" prefHeight="21.0" prefWidth="77.0" text="Reviews" underline="true">
+         <font>
+            <Font name="Comic Sans MS" size="13.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+
+            </Lighting>
+         </effect>
+      </Label>
+      <Label layoutX="182.0" layoutY="363.0" prefHeight="27.0" prefWidth="77.0" text="Stars">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="rateUs" layoutX="130.0" layoutY="397.0" mnemonicParsing="false" onAction="#rate" prefHeight="25.0" prefWidth="115.0" text="Rate us!!">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Button>
+      <Label fx:id="reviews" alignment="CENTER_RIGHT" layoutX="130.0" layoutY="294.0" prefHeight="26.0" prefWidth="47.0">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="rating" alignment="CENTER_RIGHT" layoutX="139.0" layoutY="366.0" prefHeight="21.0" prefWidth="38.0">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="Gmap" layoutX="143.0" layoutY="579.0" mnemonicParsing="false" onAction="#ShowGoogleMap" prefHeight="39.0" prefWidth="156.0" text="Show in Google Map">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font></Button>
+      <Label layoutX="96.0" layoutY="495.0" text="Price Rating">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="97.0" layoutY="526.0" text="Environment Rating">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Label layoutX="90.0" layoutY="461.0" text="Service Rating">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="serviceRating" layoutX="221.0" layoutY="461.0" prefHeight="17.0" prefWidth="38.0" />
+      <Label fx:id="priceRating" layoutX="207.0" layoutY="495.0" prefHeight="17.0" prefWidth="38.0" />
+      <Label fx:id="environmentRating" layoutX="231.0" layoutY="526.0" prefHeight="17.0" prefWidth="47.0" />
+      <ImageView fx:id="ratingImage" fitHeight="33.0" fitWidth="215.0" layoutX="97.0" layoutY="325.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>
