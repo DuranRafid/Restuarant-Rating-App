@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="425.0" prefWidth="600.0" style="-fx-background-color: PLUM;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AddItemController">
+   <children>
+      <Label layoutX="222.0" layoutY="26.0" prefHeight="28.0" prefWidth="157.0" text="ADD NEW RESTAURANT">
+         <font>
+            <Font name="Haettenschweiler" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="89.0" layoutY="120.0" text="Name Of The Restaurant">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="89.0" layoutY="183.0" text="Address of the Restaurant">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font></Label>
+      <Label layoutX="89.0" layoutY="305.0" text="Food Types">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="NameoftheItem" layoutX="311.0" layoutY="116.0" />
+      <TextField fx:id="AddressoftheItem" layoutX="311.0" layoutY="179.0" />
+      <TextField fx:id="FoodtypesoftheItem" layoutX="311.0" layoutY="301.0" />
+      <Button fx:id="AddButton" layoutX="265.0" layoutY="363.0" mnemonicParsing="false" onAction="#AddButtonClicked" text="ADD ">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="89.0" layoutY="246.0" text="Area">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="AreaOfTheItem" layoutX="311.0" layoutY="243.0" />
+   </children>
+</Pane>

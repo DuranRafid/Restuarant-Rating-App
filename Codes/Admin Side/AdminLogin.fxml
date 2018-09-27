@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="517.0" prefWidth="606.0" style="-fx-background-color: PLUM;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AdminLoginController">
+   <children>
+      <AnchorPane prefHeight="517.0" prefWidth="606.0" style="-fx-background-color: PLUM;">
+         <children>
+            <Label layoutX="160.0" layoutY="160.0" text="UserName">
+               <font>
+                  <Font name="Calibri Bold" size="18.0" />
+               </font></Label>
+            <Label layoutX="160.0" layoutY="282.0" text="Password">
+               <font>
+                  <Font name="Calibri Bold" size="18.0" />
+               </font></Label>
+            <TextField fx:id="Username" layoutX="160.0" layoutY="200.0" prefHeight="25.0" prefWidth="280.0" />
+            <Label layoutX="222.0" layoutY="37.0" text="Admin Login" textFill="#0d0101">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="24.0" />
+               </font>
+            </Label>
+            <Button layoutX="202.0" layoutY="411.0" mnemonicParsing="false" onAction="#ResetAction" prefHeight="25.0" prefWidth="75.0" style="-fx-background-radius: 10px,10px,10px,10px; -fx-background-color: WHITE; -fx-font-size: 12; -fx-text-fill: BLACK; -fx-wrap-text: true;" text="Reset" wrapText="true">
+               <effect>
+                  <Blend />
+               </effect></Button>
+            <Button layoutX="322.0" layoutY="411.0" mnemonicParsing="false" onAction="#LoginAction" prefHeight="25.0" prefWidth="75.0" style="-fx-background-radius: 10; -fx-background-color: WHITE; -fx-text-fill: BLACK;" text="Login" />
+            <PasswordField fx:id="Password" layoutX="163.0" layoutY="315.0" prefHeight="25.0" prefWidth="280.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

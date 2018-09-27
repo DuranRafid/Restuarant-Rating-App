@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="491.0" prefWidth="624.0" style="-fx-background-color: PLUM;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AdminDeleteController">
+   <children>
+      <TableView fx:id="choiceTable" layoutX="43.0" layoutY="67.0" prefHeight="357.0" prefWidth="565.0">
+        <columns>
+          <TableColumn fx:id="Name" prefWidth="95.0" text="Name" />
+          <TableColumn fx:id="Address" prefWidth="142.0" text="Address" />
+            <TableColumn fx:id="Area" prefWidth="102.0" text="Area" />
+            <TableColumn fx:id="FoodType" prefWidth="132.0" text="FoodType" />
+            <TableColumn fx:id="Action" prefWidth="93.0" text="Action" />
+        </columns>
+      </TableView>
+      <Button layoutX="250.0" layoutY="439.0" mnemonicParsing="false" onAction="#CompletedWork" text="Done" />
+   </children>
+</AnchorPane>

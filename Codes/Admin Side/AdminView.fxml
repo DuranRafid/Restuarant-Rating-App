@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="557.0" prefWidth="760.0" style="-fx-background-color: PLUM;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AdminViewController">
+   <children>
+      <Text fill="#110f01" layoutX="304.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADMIN PROFILE" wrappingWidth="146.13671875">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Button layoutX="14.0" layoutY="152.0" mnemonicParsing="false" onAction="#AddAction" prefHeight="25.0" prefWidth="146.0" text="Add new Restaurant" />
+      <Button layoutX="14.0" layoutY="259.0" mnemonicParsing="false" onAction="#DeleteAction" prefHeight="25.0" prefWidth="146.0" text="Delete Restaurant" />
+      <TableView fx:id="RecommendTable" layoutX="174.0" layoutY="144.0" prefHeight="331.0" prefWidth="570.0" style="-fx-background-color: BLANCHEDALMOND;">
+        <columns>
+          <TableColumn fx:id="Name" prefWidth="106.0" text="Name" />
+          <TableColumn fx:id="Address" prefWidth="116.0" text="Address" />
+            <TableColumn fx:id="Area" prefWidth="81.0" text="Area" />
+            <TableColumn fx:id="FoodType" prefWidth="111.0" text="FoodType" />
+            <TableColumn fx:id="Add" prefWidth="77.0" text="Add" />
+            <TableColumn fx:id="Ignore" prefWidth="75.0" text="Ignore" />
+        </columns>
+      </TableView>
+      <Label layoutX="174.0" layoutY="88.0" prefHeight="44.0" prefWidth="203.0" text="Recommendations" underline="true">
+         <font>
+            <Font name="Comic Sans MS" size="21.0" />
+         </font>
+      </Label>
+      <Button layoutX="581.0" layoutY="499.0" mnemonicParsing="false" onAction="#logOut" prefHeight="31.0" prefWidth="95.0" text="Log out">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
